@@ -1,0 +1,89 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&display=swap');
+
+@keyframes info {
+
+  to {
+    opacity: 1;
+    right: 3rem;
+  }
+}
+
+@keyframes infoOut {
+  from{
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+    right: 0.5rem;
+  }
+}
+.infoHover a:not( :hover ) ~ .absolute{
+  animation-name: infoOut;
+  animation-duration: 0.5s;
+  display: block ;
+
+  right: 3rem;
+  animation-duration: 0.5s;
+  animation-fill-mode: forwards;
+}
+.infoHover a:hover ~ .absolute{
+  animation-name: info;
+  display: block ;
+
+  right: 1.5rem;
+  animation-duration: 0.5s;
+  animation-fill-mode: forwards;
+}
+
+.infoHover1 a:not( :hover ) ~ .absolute{
+  animation-name: infoOut;
+  animation-duration: 0.5s;
+  display: block ;
+  right: 3rem;
+
+  animation-duration: 0.5s;
+  animation-fill-mode: forwards;
+}
+.infoHover1 a:hover ~ .absolute{
+  animation-name: info;
+  display: block ;
+  right: 1.5rem;
+  animation-duration: 0.5s;
+  animation-fill-mode: forwards;
+}
+.infoHover2 a:not( :hover ) ~ .absolute{
+  animation-name: infoOut;
+  animation-duration: 0.5s;
+  display: block ;
+  right: 3rem;
+
+  animation-duration: 0.5s;
+  animation-fill-mode: forwards;
+}
+.infoHover2 a:hover ~ .absolute{
+  animation-name: info;
+  display: block ;
+  right: 1.5rem;
+  animation-duration: 0.5s;
+  animation-fill-mode: forwards;
+}
+
+.infoHover3 a:not( :hover ) ~ .absolute{
+  animation-name: infoOut;
+  animation-duration: 0.5s;
+  display: block ;
+  right: 3rem;
+
+  animation-duration: 0.5s;
+  animation-fill-mode: forwards;
+}
+.infoHover3 a:hover ~ .absolute{
+  animation-name: info;
+  display: block ;
+  right: 1.5rem;
+  animation-duration: 0.5s;
+  animation-fill-mode: forwards;
+}
